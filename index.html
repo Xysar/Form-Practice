@@ -26,38 +26,43 @@
             You know you want to.
           </p>
         </div>
-        <form class="middle" action="example.com/path" method="post">
+        <form class="middle" action="">
           <fieldset class="info-input">
             <h3>Let's do this!</h3>
             <div class="entries">
               <div class="entry">
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" />
+                <input required type="text" name="first-name" />
               </div>
               <div class="entry">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" />
+                <input required type="text" name="last-name" />
               </div>
               <div class="entry">
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" />
+                <input required type="email" name="email" />
               </div>
               <div class="entry">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" name="phone" />
+                <input requiredtype="tel" name="phone" />
               </div>
               <div class="entry">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" />
+                <input required type="password" id="password" name="password" />
               </div>
               <div class="entry">
                 <label for="confirmpass">CONFIRM PASSWORD</label>
-                <input type="password" />
+                <input
+                  required
+                  type="password"
+                  id="confirmpass"
+                  name="confirmpass"
+                />
               </div>
             </div>
           </fieldset>
           <div class="bottom">
-            <button class="create-account">Create Account</button>
+            <button type="submit" class="create-account">Create Account</button>
             <p>
               Already have an account?
               <a class="login-button" href="">Log in</a>
@@ -66,5 +71,6 @@
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
